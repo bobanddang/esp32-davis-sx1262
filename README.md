@@ -2,6 +2,8 @@
 
 Capture wireless ISS telemetry from a **Davis Vantage Pro2 / Vue** station with an ESP32 (S3/C3/C5) and **Waveshare Core1262-HF** (Semtech SX1262), then publish decoded metrics to **Home Assistant** via MQTT Auto-Discovery.
 
+Others have already done the hard work of reverse-engineering the Davis FHSS hop tables, packet layout, and CRC — notably projects such as [DavisRFM69](https://github.com/dekay/DavisRFM69) (and related community efforts around RFM69 / SDR reception). Those implementations target different radios. This repository exists to bring that same protocol knowledge to the **SX1262 / Core1262-HF** path and wire it into Home Assistant. Huge thanks to those authors for the heavy lifting; this project stands on their shoulders.
+
 ## Hardware wiring
 
 | Core1262-HF | ESP32-S3 | ESP32-C3 | ESP32-C5 | Notes |
